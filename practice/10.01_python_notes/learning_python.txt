@@ -1,0 +1,4 @@
+In Python you can do calculation.
+In Python you can create class and instance.
+In Python you can loop through a list.
+In Python you can create dictionary data structure.

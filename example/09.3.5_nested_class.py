@@ -19,6 +19,15 @@ class Battery() :
         self.battery_size = size
     def describe_battery(self) : 
         print("This car has a {}-kW battery.".format(self.battery_size))
+    def get_range(self) : 
+        if self.battery_size == 70 : 
+            range = 240
+        elif self.battery_size == 85 : 
+            range = 270
+        else : 
+            range = 'unknown'
+        print('This car can go approximately {} miles on a full charge'.format(range))
+
 
 class ElectricCar(Car): 
     def __init__(self, make, model, year): 
@@ -31,3 +40,4 @@ class ElectricCar(Car):
 ecar = ElectricCar('tesla', 'model s', 2016)
 print(ecar.get_descriptive_name())
 ecar.describe_battery()
+ecar.battery.get_range()
